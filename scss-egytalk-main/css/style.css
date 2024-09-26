@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, sans-serif;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: saker;
+  src: url(SakerSansBold.ttf);
+  font-weight: bold;
+}
+html body {
+  font-size: 62.5%;
+  height: 100%;
+  background-color: #e8e8e8;
+}
+
+hr {
+  width: 100%;
+  border-top: 1px solid #8c8b8b;
+  margin-bottom: 2px;
+}
+
+br .clear {
+  clear: both;
+  font-size: 0px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-right: 10px;
+  text-align: justify;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: 1.2rem;
+  width: 100%;
+  border: 0;
+}
+
+/* Wrapper */
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+/* End wrapper */
+/* Header */
+header {
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: left;
+  height: 60px;
+  background-image: url("../images/bgImg.png");
+  background-repeat: repeat;
+  color: white;
+  position: relative;
+}
+header h1 {
+  display: inline-block;
+  font-family: saker, Arial;
+  letter-spacing: 3px;
+  font-size: 2.4rem;
+  margin-top: 1.8rem;
+  margin-left: 2.5rem;
+}
+header img {
+  float: left;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+header input[type=text] input[type=password] {
+  margin-top: 0.5em;
+  margin-left: 1.5em;
+  font-size: 1.1rem;
+}
+header input[type=submit] {
+  margin-top: 0.1em;
+  border: 0;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  color: white;
+  padding: 2px;
+  font-size: 1.1rem;
+}
+header form {
+  display: inline;
+  margin-bottom: 0.7rem;
+}
+header nav {
+  position: relative;
+  display: inline;
+  margin-left: 2rem;
+}
+header nav ul {
+  list-style-type: none;
+  display: inline;
+}
+header nav li {
+  margin-left: 1rem;
+  display: inline;
+}
+header a {
+  display: inline-block;
+  padding: 2px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+header a :hover,
+header a header input[type=submit]:hover {
+  background-color: gray;
+  color: #ffffff;
+}
+header #loggOutButton {
+  border: 1px solid white;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+input.fontSize {
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+/* End header */
+/* Main */
+main {
+  width: 810px;
+  margin: 0 auto;
+  padding: 4px 4px 35px 4px;
+}
+main h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+}
+main h2 {
+  margin-top: 0.5rem;
+  font-family: saker, Arial, sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+main h3 {
+  margin-top: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+main input[type=submit] {
+  font-size: 1.2rem;
+}
+main .box {
+  display: block;
+  width: 400px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 4px;
+  background-color: white;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+main .box input[type=submit] {
+  background: black;
+  border: 0;
+  color: white;
+  padding: 3px 6px;
+  float: right;
+  font-size: 1.2rem;
+  margin-top: 1px;
+  margin-right: 2px;
+}
+main .box input[type=text] {
+  width: 92%;
+  font-size: 1.1rem;
+  padding: 3px;
+}
+main article.comment {
+  padding: 2px;
+  background-color: #e8e8e8;
+  margin-top: 5px;
+}
+main h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+main img.login {
+  float: left;
+}
+main section.login {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.time {
+  text-align: right;
+  font-size: 1rem;
+}
+
+/* End main */
+/* Footer */
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  background-image: url("../images/bgImg.png");
+  color: white;
+  font-size: 1.2rem;
+}
+footer #footerRight {
+  float: right;
+  padding: 5px;
+}
+footer #footerLeft {
+  float: left;
+  padding: 5px;
+}
+
+/* End footer */
+@media only screen and (max-width: 768px) {
+  header {
+    height: 80px;
+  }
+  header h1 {
+    margin-top: 1rem;
+  }
+  header img#logga {
+    margin-left: 15px;
+  }
+  header input[type=text] {
+    width: 10rem;
+    margin-left: 0;
+  }
+  header input[type=password] {
+    width: 10rem;
+    margin-left: 1rem;
+  }
+  header form#loggInForm {
+    position: absolute;
+    display: block;
+    bottom: 8px;
+    margin-left: 15px;
+    margin-bottom: 0;
+  }
+  header form#searchForm {
+    margin-left: 0.7rem;
+  }
+  header nav {
+    position: absolute;
+    display: block;
+    bottom: 5px;
+    margin-left: 5px;
+  }
+  header nav i {
+    margin-left: 0.4em;
+    display: inline;
+  }
+  main {
+    width: 100%;
+    margin-left: 2px;
+    padding-bottom: 35px;
+  }
+  main .box {
+    width: 99%;
+  }
+  main img.login {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

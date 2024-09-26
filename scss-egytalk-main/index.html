@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGY Talk</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="images/loggo.png" alt="loggo" id="logga">
+            <h1>EGY Talk</h1>
+            <form id="searchForm">
+                <input type="text" name = "searchUsr" placeholder="Sök vänner" size="30">
+                <input type="submit" value="🔍" class="fontSize">
+            </form>
+            <nav>
+            <ul>
+                <li><a href="/">No Name</a></li>
+                <li><a href="/flow">Flöde</a></li>
+                <li><a href="/friends">Vänner</a></li>
+                <li><a href="/prefernces">Inställningar</a></li>
+            </ul>
+            </nav>
+            <a href = 'api/logout' id='loggOutButton'>Logga ut</a>
+        </header>
+        <!-- END HEADER -->
+        
+        <main>
+            <section>
+                <aside style ="display: inline-block; margin-right: 10px;">
+                    <img class="login" src="images/mobile.png" alt="Mobiltelefon" width="180">
+                </aside>
+                <section class="login">
+                    <h2>Skapa konto på EGY Talk</h2>
+                    <form action="api/post/user" method="post">
+                        <p>
+                            <label>Förnamn</label><br>
+                            <input type="text"  name="firstName">
+                        </p>
+                        <p>
+                            <label>Efternamn</label><br>
+                            <input type="text"  name="surName">
+                        </p>
+                        <p>
+                            <label>Användarnamn</label><br>
+                            <input type="text"  name="userName">
+                        </p>
+                        <p>
+                            <label>Lösenord</label><br>
+                            <input type="password" name="pwd">
+                        </p>
+                        <input type="submit" value="Skapa konto">
+                    </form>
+                </section>
+              </section>
+        </main>
+        <!-- END MAIN -->
+        <footer>
+            <p id="footerRight">&#xa9; EGY Talk</p>
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+</body>
+</html>
